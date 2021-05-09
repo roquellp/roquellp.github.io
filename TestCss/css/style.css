@@ -29,7 +29,7 @@ header {
 }
 
 .logo:hover {
-    transform: rotate(2deg) scale(1.1);
+    transform: rotate(0deg) scale(1.1);
 }
 
 .logo::before,
@@ -88,6 +88,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .hero h2 {
@@ -167,8 +168,13 @@ footer .footer__bottom p {
 }
 
 @media screen and (max-width: 480px) {
+    header {
+        /* justify-content: center; */
+    }
+
     .logo {
         margin-left: 2rem;
+        font-size: 1.5em;
     }
 
     nav ul li.burguer {
